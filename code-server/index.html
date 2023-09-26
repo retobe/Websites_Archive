@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <title>Document</title>
+    <script src="./Assets/js/index.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Sign Up Grid -->
+
+    <div class="signup">
+      <h1>Sign Up</h1>
+      <div class="grid-inputs">
+        <label for="email_signup">Email:</label>
+        <input type="email" name="email" id="email_signup" />
+        <label for="username_signup">Username:</label>
+        <input type="text" name="username" id="username_signup" />
+        <label for="password_signup">Password:</label>
+        <input type="password" name="password" id="password_signup" />
+      </div>
+      <div class="buttons">
+        <input
+          id="submit_signup"
+          onclick="signUpForm();"
+          type="submit"
+          value="Submit"
+        />
+        <input
+          id="login_redirect"
+          onclick="redirect(this.id);"
+          type="submit"
+          value="Log In"
+        />
+      </div>
+    </div>
+
+    <!--Login Grid-->
+
+    <div class="login">
+      <h1>Login </h1>
+      <div class="grid-inputs">
+        <label for="username_login">Username/Email:</label>
+        <input type="text" name="username" id="username_login" />
+        <label for="password_login">Password:</label>
+        <input type="password" name="password" id="password_login" />
+      </div>
+      <div class="buttons">
+        <input
+          id="submit_login"
+          onclick="loginForm();"
+          type="submit"
+          value="Submit"
+        />
+        <input
+          id="signup_redirect"
+          onclick="redirect(this.id);"
+          type="submit"
+          value="Register"
+        />
+      </div>
+    </div>
+
+  </body>
+</html>

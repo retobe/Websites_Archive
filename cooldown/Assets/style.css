@@ -1,0 +1,37 @@
+body {
+  background-color: #5c5c5c;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  background-color: red;
+  width: 30rem;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.time {
+  width: 100vh;
+  height: 15rem;
+  margin: auto;
+  background-color: #ffd0d0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 5rem;
+}
+
+#time {
+  color: red;
+  align-self: center;
+  font-size: 4rem;
+  display: inline-block;
+}

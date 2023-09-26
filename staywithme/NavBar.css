@@ -1,0 +1,58 @@
+* {
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0px 0px 5px black;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(114, 159, 91);
+}
+
+.active {
+  background-color: #009000;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color:rgb(29, 87, 0); /* set your background color */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); /* set your box shadow */
+  transition: all 0.3s ease-in-out; /* set the transition time */
+}
+
+nav.scrolled {
+  background-color: rgb(14, 43, 0); /* set the background color when scrolled */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5); /* set the box shadow when scrolled */
+  color: #fff; /* set the color when scrolled */
+}
+
+nav ul {
+  list-style-type: none; /* remove bullet points */
+  margin: 0; /* remove margin */
+  padding: 0; /* remove padding */
+  overflow: hidden; /* prevent list items from breaking to new line */
+}
+
+nav li {
+  float: left; /* make list items float next to each other */
+}
+
+nav a {
+  display: block; /* make links take up full width of list item */
+  color: rgb(255, 255, 255); /* white text color */
+  text-align: center; /* center text */
+  padding: 20px 16px; /* add some padding */
+  text-decoration: none; /* remove underline */
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #3aff3a; /* dark gray background color on hover */
+}
+
+
+@media only screen and (max-width: 1000px){
+  nav {
+    position: relative !important;
+  }
+}

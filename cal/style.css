@@ -1,0 +1,100 @@
+* {
+  font-family: Poppins;
+}
+.header {
+  color: white;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  width: 20rem;
+  height: 33rem;
+  border-top-left-radius: 30px 30px !important;
+  border-top-right-radius: 30px 30px !important;
+  border-radius: 10px;
+}
+
+.output {
+  width: 18rem;
+  height: 3rem;
+  margin: auto;
+  text-align: right;
+  font-size: larger;
+  border-radius: 20px;
+  background-color: #000000;
+  border-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+#result {
+  color: white;
+  margin: 0.5rem;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+}
+
+.box {
+  display: flex;
+  width: 60px;
+  margin: auto;
+  margin-top: 1rem;
+  height: 50px;
+  border: 3px solid black;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.box:hover {
+  transform: scale(0.9);
+}
+
+.clear {
+  background-color: #969696;
+}
+
+.operator {
+  background-color: #969696;
+}
+
+.enter {
+  position: relative;
+  height: 130px;
+  background-color: orange;
+}
+
+#box17,
+#box18,
+#box19 {
+  bottom: 5rem;
+}
+
+.number {
+  background-color: #474747;
+  color:white;
+}
+
+.misc {
+    background-color: #474747;
+    color:white;
+}
+
+.selected {
+  background-color: red;
+  transform: scale(.9);
+}

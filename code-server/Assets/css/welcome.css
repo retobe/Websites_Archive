@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Kick';
+    src: url("../fonts/kick.ttf");
+}
+
+@font-face {
+    font-family: "Twitch";
+    src: url("../fonts/DIMIS___.TTF");
+}
+
+
+@font-face {
+    font-family: "Youtube";
+    src: url("../fonts/youtube-sans-medium.ttf");
+}
+
+body {
+  background: linear-gradient(to right, rgb(255, 132, 0), rgb(255, 0, 0)) fixed;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.active {
+  background-color: #906a00;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(87, 75, 0); /* set your background color */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); /* set your box shadow */
+  transition: all 0.3s ease-in-out; /* set the transition time */
+}
+
+nav.scrolled {
+  background-color: rgb(43, 29, 0); /* set the background color when scrolled */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5); /* set the box shadow when scrolled */
+  color: #fff; /* set the color when scrolled */
+}
+
+nav ul {
+  list-style-type: none; /* remove bullet points */
+  margin: 0; /* remove margin */
+  padding: 0; /* remove padding */
+  overflow: hidden; /* prevent list items from breaking to new line */
+}
+
+nav li {
+  float: left; /* make list items float next to each other */
+}
+
+nav a {
+  display: block; /* make links take up full width of list item */
+  color: rgb(255, 255, 255); /* white text color */
+  text-align: center; /* center text */
+  padding: 20px 16px; /* add some padding */
+  text-decoration: none; /* remove underline */
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff9c3a; /* dark gray background color on hover */
+}
+
+#kick {
+    font-family: "Kick";
+    color: green;
+    font-size: larger;
+}
+
+#twitch {
+    font-family: "Twitch";
+    color: rgb(143, 53, 143);
+    font-size: larger;
+}
+
+#youtube {
+    font-family: "Youtube";
+    color: red;
+    font-size: larger;
+}

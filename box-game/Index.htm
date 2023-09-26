@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click The Right Box</title>
+    <link rel="stylesheet" href="./Assets/css/index.css">
+    <script src="./Assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Click the right box</h1>
+    </div>
+
+    <div class="container">
+      <div id="1" name="boxes" class="box"></div>
+      <div id="2" name="boxes" class="box"></div>
+      <div id="3" name="boxes" class="box"></div>
+      <div id="4" name="boxes" class="box"></div>
+      <div id="5" name="boxes" class="box"></div>
+      <div id="6" name="boxes" class="box"></div>
+    </div>
+    <div class="result">
+      <p id="result">
+        Your goal is to click the right box out of the 6 shown, if you get it
+        right, you win, if u don't u die.
+      </p>
+      <input id="restart" type="submit" disabled="true" value="Reset" onclick="restart()">
+    </div>
+  </body>
+</html>

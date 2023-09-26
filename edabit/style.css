@@ -1,0 +1,26 @@
+* {
+    font-family: "Poppins";
+}
+
+.container {
+    margin: auto;
+    background-color: red;
+    max-width: 30rem;
+    width: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    box-shadow: 2px 2px 10px black;
+    
+}
+
+.header {
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    color: red;
+}
+
+#today::before {
+    content: "School Ends: ";
+}

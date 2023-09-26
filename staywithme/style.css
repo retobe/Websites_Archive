@@ -1,0 +1,128 @@
+* {
+  font-family: Poppins;
+}
+
+:root {
+  --islam-color: #009000;
+}
+
+.main {
+  margin: auto;
+  text-align: center;
+}
+
+.main img {
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+}
+
+.main img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main h1 {
+  color: var(--islam-color);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.section-pillar {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  max-width: 35rem;
+  height: 85rem;
+  background-color: var(--islam-color);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+
+.section-header-pillar {
+  font-size: 20px !important;
+}
+
+
+.section-header-pillar,
+.section-header-about,
+.section-header-belief,
+.section-header-worship,
+.section-header-value,
+.section-header-question {
+  margin: auto;
+  color: var(--islam-color);
+  text-align: center;
+  font-size: 15px;
+}
+
+.pillar {
+  height: 12rem;
+  text-align: left !important;
+  justify-content: center;
+}
+
+#pillar5 {
+  height: 14rem;
+}
+
+.image img {
+  display:flex;
+  width: 50px;
+  height: 50px;
+}
+
+.dates {
+  width: 80px !important;
+}
+
+.number {
+  font-size: 15px;
+  opacity: 0.5;
+  color: white;
+}
+.title {
+  color: rgb(40, 40, 40);
+  font-size: 10px;
+}
+
+.description {
+  font-weight: bold;
+  overflow-y:auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 8rem;
+  color: white;
+}
+
+
+/*
+
+Origin
+
+*/
+
+.section-about, .section-belief, .section-worship, .section-question {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  max-width: 90rem;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--islam-color);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: large;
+  color:white;
+  font-weight: 800;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Image Generator/Editor</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <p class="main-header">Hello World</p>
+    <p class="random">
+      Welcome to this weird website that I've created in less than 5 minutes.<br />It
+      generates random images every refresh.
+    </p>
+    <img
+      id="image"
+      src="https://picsum.photos/300/300"
+      alt="randoimage"
+      class="images"
+    /><br />
+    <input
+      type="checkbox"
+      id="greyscale"
+      name="greyscale"
+      class="checkboxes"
+      value="grey"
+    />
+    <label for="greyscale">Greyscale</label><br />
+    <input
+      type="checkbox"
+      id="bright"
+      name="bright"
+      class="checkboxes"
+      value="bright"
+    />
+    <label for="bright">Brightness</label><br />
+    <input
+      type="checkbox"
+      id="Contrast"
+      name="Contrast"
+      class="checkboxes"
+      value="con"
+    />
+    <label for="Contrast">Contrast</label><br /><br />
+    <label id="rangeLabel" for="range">Range: 0%</label>
+    <input
+      class="range"
+      oninput="showVal(this.value)"
+      onchange="showVal(this.value)"
+      type="range"
+      id="range"
+      name="range"
+      step="5"
+      min="-100"
+      max="100"
+    /><br /><br />
+    <div class="boxes">
+      <input
+        class="checkboxes"
+        type="submit"
+        value="Submit"
+        onclick="submit();"
+      /><br />
+      <input
+        class="checkboxes"
+        type="submit"
+        value="Reset"
+        onclick="reset();"
+      /><br />
+      <input
+        class="checkboxes"
+        type="submit"
+        value="Refresh"
+        onclick="refresh();"
+      /><br />
+    </div>
+    <p class="result" id="result"></p>
+  </body>
+</html>

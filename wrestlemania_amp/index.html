@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Rumble</title>
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./Assets/images/royal.png"
+      type="image/x-icon"
+    />
+    <script src="./Assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>WrestleMania</h1>
+    </div>
+    <div class="members">
+      <input
+        type="checkbox"
+        onclick="selectOnlyThis(this.id)"
+        class="box"
+        name="Fanum"
+        id="1"
+      />
+      <label for="Fanum">Fanum</label>
+      <input
+        type="checkbox"
+        onclick="selectOnlyThis(this.id)"
+        class="box"
+        name="Chris"
+        id="2"
+      />
+      <label for="Chris">Chris</label>
+      <input
+        type="checkbox"
+        onclick="selectOnlyThis(this.id)"
+        class="box"
+        name="Kai"
+        id="3"
+      />
+      <label for="Kai">Kai</label>
+      <input
+        type="checkbox"
+        onclick="selectOnlyThis(this.id)"
+        class="box"
+        name="Agent"
+        id="4"
+      />
+      <label for="Agent">Agent</label>
+      <input
+        type="checkbox"
+        onclick="selectOnlyThis(this.id)"
+        class="box"
+        name="Davis"
+        id="5"
+      />
+      <label for="Davis">Davis</label>
+      <input
+        type="checkbox"
+        onclick="selectOnlyThis(this.id)"
+        class="box"
+        name="Duke"
+        id="6"
+      />
+      <label for="Duke">Duke</label>
+    </div>
+    <div class="container">
+      <div class="takedown">
+        <div class="title"><h4>takedown</h4></div>
+        <div class="image">
+          <img src="./Assets/images/wrestle.png" alt="Wrestle" />
+        </div>
+        <div class="points"><h5>+3 points</h5></div>
+        <div class="desc">
+          If the opponent player's knee has hit the ground, 3 points are
+          rewarded
+        </div>
+        <br /><input
+          class="button"
+          onclick="add(this.id)"
+          id="3"
+          type="button"
+          value="Add"
+        />
+      </div>
+      <div class="Takeout">
+        <div class="title"><h4>Takeout</h4></div>
+        <div class="image">
+          <img src="./Assets/images/glove.png" alt="glove" />
+        </div>
+        <div class="points"><h5>+2 points</h5></div>
+        <div class="desc">
+          If the opponent player is out of the line, 2 points are rewarded
+        </div>
+        <br /><br /><input
+          class="button"
+          type="button"
+          id="2"
+          onclick="add(this.id)"
+          value="Add"
+        />
+      </div>
+    </div>
+
+    <div class="leaderboard">
+      <br />
+      <h3>leaderboard</h3>
+      <div class="scores">
+        <h4 id="fanum"></h4>
+        <h4 id="chris"></h4>
+        <h4 id="kai"></h4>
+        <h4 id="agent"></h4>
+        <h4 id="davis"></h4>
+        <h4 id="duke"></h4>
+      </div>
+      <input type="reset" value="Reset" onclick="reset()">
+    </div>
+  </body>
+</html>
