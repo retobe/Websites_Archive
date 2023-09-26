@@ -327,7 +327,5 @@ function game() {
             }
         });
     });
-
-    // Initialize the game
     initializeWordDisplay();
 }
