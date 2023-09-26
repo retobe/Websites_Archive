@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://shelby123:IshaNTKmfCVGnqBU@phoenix.e98oa.mongodb.net/test', {useNewUrlParser: true});
+mongoose.connect('Database_TOKEN', {useNewUrlParser: true});
 
 const db = mongoose.connection;
 
